@@ -1,82 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Treact-Clone</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./index.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-</head>
-<body class="">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="">
     <section id="landing">
-        <nav class="nav">
-            <div class="row nav__row">
-                <div class="nav__logo">
-                    <img class="nav__logo--img" src="./logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo">
-                    <div class="nav__logo--title">Treact</div>
-                </div>
-                 <ul class="nav__links">
-                   <li><a href="#" class="nav__link">About</a></li>
-                   <li><a href="#" class="nav__link"></a>Blog</li>
-                   <li><a href="#" class="nav__link"></a>Pricing</li>
-                   <li><a href="#" class="nav__link"></a>Contact Us</li>
-                   <li><a href="#" class="nav__link login"></a>Login</li>
-                   <li><a href="#" class="nav__link nav__link--primary">Sign UP</a></li>
-                </ul>
-                <button class="btn__menu" onclick="openmenu()">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
+      <nav class="nav">
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img
+              class="nav__logo--img"
+              src="./logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="Logo"
+            />
+            <div class="nav__logo--title">Treact</div>
+          </div>
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link"></a>Blog</li>
+            <li><a href="#" class="nav__link"></a>Pricing</li>
+            <li><a href="#" class="nav__link"></a>Contact Us</li>
+            <li><a href="#" class="nav__link login"></a>Login</li>
+            <li>
+              <a href="#" class="nav__link nav__link--primary">Sign UP</a>
+            </li>
+          </ul>
+          <button class="btn__menu" onclick="openmenu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closemenu()">
+              <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closemenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closemenu()">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closemenu()">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closemenu()"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closemenu()">Login</a>
+              </li>
+              <li class="menu__list">
+                <a
+                  href="#"
+                  class="menu__link menu__link--primary"
+                  onclick="closemenu()"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+              <h1>
+                Beautiful React Templates <span class="purple">for you.</span>
+              </h1>
+              <p class="header__descritpion--para">
+                Our templates are easy to setup, understand and customize. Fully
+                modular components with a variety of pages and components.
+              </p>
+              <div class="header__email">
+                <input
+                  type="text"
+                  class="header__email--input"
+                  placeholder="Your Email Address"
+                  fdprocessedid="8b84wj"
+                />
+                <button class="header__email--btn" fdprocessedid="84qan">
+                  Get Started
                 </button>
-                <div class="menu__backdrop">
-                  <button class="btn__menu  btn__menu--close" onclick="closemenu()">
-                    <i class="fas fa-times" aria-hidden="true"></i>
-                </button>
-                   <ul class="menu__links">
-                    <li class="menu__list">
-                        <a href="#" class="menu__link" onclick="closemenu()">About</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#" class="menu__link" onclick="closemenu()">Blog</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#" class="menu__link" onclick="closemenu()">Pricing</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#" class="menu__link" onclick="closemenu()">Contact Us</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#" class="menu__link" onclick="closemenu()">Login</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#" class="menu__link menu__link--primary" onclick="closemenu()">Sign Up</a>
-                    </li>
-                   </ul>
-                </div>
+              </div>
+              <p class="header__customers--title">Our Trusted Customers</p>
+              <img
+                src="./customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                alt=""
+              />
             </div>
-        </nav>
-        <header>
-            <div class="container">
-               <div class="row">
-                 <div class="header__description">
-                    <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
-                          <p class="header__descritpion--para">
-                            Our templates are easy to setup, understand and customize. Fully modular components with a
-                        variety of pages and components.
-                          </p>
-                    <div class="header__email">
-                        <input type="text" class="header__email--input" placeholder="Your Email Address" fdprocessedid="8b84wj">
-                        <button class="header__email--btn" fdprocessedid="84qan">Get Started</button>
-                    </div>
-                    <p class="header__customers--title">Our Trusted Customers</p>
-                    <img src="./customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">  
-                </div>
 
-                <figure class="header__img--wrapper">
-                    <img src="./design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
-                </figure>
-            </div>
-            </div>
-        </header>
+            <figure class="header__img--wrapper">
+              <img
+                src="./design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </header>
     </section>
-</body>
+
+    <main>
+      <section id="features">
+        <div class="container">
+          <div class="row__narrow">
+            <h4 class="sectiion__tag"><span class="purple">FEATURES</span></h4>
+            <h2 class="section__title">
+              We have Amazing <span class="purple">Service.</span>
+            </h2>
+            <div class="section__para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              minima sapiente velit in recusandae possimus autem, illo molestiae
+              et, ipsa explicabo officiis voluptates unde reiciendis.
+            </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="featiure__img--wrapper">
+                    <img
+                      src="./shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Secure</h2>
+                    <p class="feature__para">
+                      We strictly only deal with vendors that provide top notch
+                      security.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="featiure__img--wrapper">
+                    <img
+                      src="./support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">24/7 Support</h2>
+                    <p class="feature__para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut commodi distinctio ab pariatur iusto?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="featiure__img--wrapper">
+                    <img
+                      src="./customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Customizable</h2>
+                    <p class="feature__para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos saepe velit nemo, at tempore?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="featiure__img--wrapper">
+                    <img
+                      src="./reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Reliable</h2>
+                    <p class="feature__para">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, alias aut magni quisquam maiores deleniti?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="featiure__img--wrapper">
+                    <img
+                      src="./fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Fast</h2>
+                    <p class="feature__para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, maiores. Maiores dignissimos placeat quas iusto?
+                  </div>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="featiure__img--wrapper">
+                    <img
+                      src="./simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Easy</h2>
+                    <p class="feature__para">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis tenetur tempora nihil? Odit, reprehenderit velit!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+  </body>
 </html>
